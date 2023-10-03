@@ -59,7 +59,7 @@ bd <- data %>% pivot_longer(
                    prov == "entrerios" ~ "Entre Rios",
                    prov == "rionegro" ~ "Rio Negro",
                    TRUE ~ prov  # Mantén el valor original para otros casos
-    )
+    ) 
   ) %>% 
   select(-indice_tiempo)
 
